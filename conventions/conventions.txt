@@ -1,0 +1,25 @@
+Naming Conventions:
+
+html:
+    index.html
+    about.html
+    contact.html
+    recipies.html
+
+images:
+    folders:
+        bkg - background images
+        btn - button images
+        cnt - content images
+        dcl - decal images
+        lgo - logo images
+    files:
+        frame.name.png
+
+scripts:
+    type.module-v.r.s.n.js
+
+styles:
+    style.css
+    other-module.css
+    
