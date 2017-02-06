@@ -19,10 +19,11 @@ ul.topNavClass li a {
   font-size: 17px;
 }
 
-div.indexTopNavClass {
-  max-width: 800px;
-  margin: auto;
-}
+div#fullContainer {max-width: 800px;}
+
+div.center {margin: auto;}
+
+/*div.indexTopNavClass {max-width: 800px;}*/
 
 object.indexTopNavClass {
   width: 100%;
