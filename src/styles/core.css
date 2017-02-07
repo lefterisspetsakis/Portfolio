@@ -25,9 +25,11 @@ div.center {margin: auto;}
 
 /*div.indexTopNavClass {max-width: 800px;}*/
 
+/*
 object.indexTopNavClass {
   width: 100%;
 }
+*/
 
 ul.topNavClass li a:hover {background-color: #555;}
 
