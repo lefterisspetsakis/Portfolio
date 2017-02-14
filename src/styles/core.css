@@ -1,3 +1,28 @@
+/*
+Date: Feb 14, 2017
+
+Module: core.css
+
+This module describes the styles that
+apply to the entire website and are
+not page specific. Ex. navigation bar,
+mainContainer, etc...
+
+Written by: Lefteris Spetsakis
+*/
+
+/*************************
+  Main Container styles
+*************************/
+
+div#fullContainer {max-width: 850px;}
+
+div.center {margin: auto;}
+
+/*************************
+  Navigation bar styles
+*************************/
+
 ul.topNavClass {
   list-style-type: none;
   margin: 0;
@@ -19,23 +44,13 @@ ul.topNavClass li a {
   font-size: 17px;
 }
 
-div#fullContainer {max-width: 850px;}
-
-div.center {margin: auto;}
-
-/*div.indexTopNavClass {max-width: 800px;}*/
-
-/*
-object.indexTopNavClass {
-  width: 100%;
-}
-*/
-
-li.navFontsClass {font-family: sans-serif}
-
 ul.topNavClass li a:hover {background-color: #555;}
 
 ul.topNavClass li.icon {display: none;}
+
+/*************************
+  Nav bar options styles
+*************************/
 
 /* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topNavClass (li.icon) */
 @media screen and (max-width:680px) {

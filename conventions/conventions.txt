@@ -20,6 +20,6 @@ scripts:
     type.module-v.r.s.n.js
 
 styles:
-    style.css
+    core.css
     other-module.css
     
