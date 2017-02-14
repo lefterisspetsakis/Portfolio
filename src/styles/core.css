@@ -31,6 +31,8 @@ object.indexTopNavClass {
 }
 */
 
+li.navFontsClass {font-family: sans-serif}
+
 ul.topNavClass li a:hover {background-color: #555;}
 
 ul.topNavClass li.icon {display: none;}
