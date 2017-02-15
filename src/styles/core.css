@@ -23,7 +23,7 @@ div.center {margin: auto;}
   Navigation bar styles
 *************************/
 
-ul.topNavClass {
+ul.top-nav {
   list-style-type: none;
   margin: 0;
   padding: 0;
@@ -31,10 +31,10 @@ ul.topNavClass {
   background-color: #333;
 }
 
-ul.topNavClass li {float: left;}
+ul.top-nav li {float: left;}
 
 /* text styling */
-ul.topNavClass li a {
+ul.top-nav li a {
   display: inline-block;
   color: #f2f2f2;
   text-align: center;
@@ -44,37 +44,37 @@ ul.topNavClass li a {
   font-size: 17px;
 }
 
-ul.topNavClass li a:hover {background-color: #555;}
+ul.top-nav li a:hover {background-color: #555;}
 
-ul.topNavClass li.icon {display: none;}
+ul.top-nav li.icon {display: none;}
 
 /*************************
   Nav bar options styles
 *************************/
 
-/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the topNavClass (li.icon) */
+/* When the screen is less than 680 pixels wide, hide all list items, except for the first one ("Home"). Show the list item that contains the link to open and close the top-nav (li.icon) */
 @media screen and (max-width:680px) {
-  ul.topNavClass li:not(:first-child) {display: none;}
-  ul.topNavClass li.icon {
+  ul.top-nav li:not(:first-child) {display: none;}
+  ul.top-nav li.icon {
     float: right;
     display: inline-block;
   }
 }
 
-/* The "responsive" class is added to the topNavClass with JavaScript when the user clicks on the icon. This class makes the topNavClass look good on small screens */
+/* The "responsive" class is added to the top-nav with JavaScript when the user clicks on the icon. This class makes the top-nav look good on small screens */
 
 @media screen and (max-width:680px) {
-  ul.topNavClass.responsive {position: relative;}
-  ul.topNavClass.responsive li.icon {
+  ul.top-nav.responsive {position: relative;}
+  ul.top-nav.responsive li.icon {
     position: absolute;
     right: 0;
     top: 0;
   }
-  ul.topNavClass.responsive li {
+  ul.top-nav.responsive li {
     float: none;
     display: inline;
   }
-  ul.topNavClass.responsive li a {
+  ul.top-nav.responsive li a {
     display: block;
     text-align: left;
   }

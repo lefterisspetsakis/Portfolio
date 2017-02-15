@@ -15,12 +15,12 @@ Written by: Lefteris Spetsakis
 function respTopNav()
 {
   var x = document.getElementById("topNav");
-  if (x.className === "topNavClass")
+  if (x.className === "top-nav")
   {
     x.className += " responsive";
   }
   else
   {
-    x.className = "topNavClass";
+    x.className = "top-nav";
   }
 }
