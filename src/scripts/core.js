@@ -24,8 +24,3 @@ function respTopNav()
     x.className = "topNavClass";
   }
 }
-
-function changeToPage(new_url)
-{
-  document.getElementById("documentArea").setAttribute('data', new_url);
-}
