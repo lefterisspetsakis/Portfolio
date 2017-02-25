@@ -94,6 +94,19 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
     display: block;
+    float: left;
+}
+
+#nav li:hover ul {
+    display: block;
+    right: 0;
+}
+
+#nav ul {
+    display: none;
+}
+#nav ul li {
+    margin-right: 0;
 }
 
 /*
