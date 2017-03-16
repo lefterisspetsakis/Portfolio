@@ -17,7 +17,9 @@ Written by: Lefteris Spetsakis
 
 div#fullContainer {max-width: 850px;}
 
-div.center {margin: auto;}
+div.center-core {margin: auto;}
+
+div.container {max-width: 850px;}
 
 /*************************
   Navigation bar styles
@@ -37,7 +39,7 @@ ul.topNavClass li {float: left;}
 ul.topNavClass li a {
   display: inline-block;
   color: #f2f2f2;
-  text-align: center;
+  text-align: center-core;
   padding: 14px 16px;
   text-decoration: none;
   transition: 0.3s;
