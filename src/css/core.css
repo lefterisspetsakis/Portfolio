@@ -63,6 +63,17 @@ ul.topNavClass li.icon {display: none;}
   }
 }
 
+/*************************
+     Carousel Styles
+*************************/
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  width: 100%;
+  margin: auto;
+}
+
+
 /* The "responsive" class is added to the topNavClass with JavaScript when the user clicks on the icon. This class makes the topNavClass look good on small screens */
 
 @media screen and (max-width:680px) {
