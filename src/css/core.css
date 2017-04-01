@@ -73,6 +73,9 @@ ul.topNavClass li.icon {display: none;}
   margin: auto;
 }
 
+#carousel-container {
+  padding: 0;
+}
 
 /* The "responsive" class is added to the topNavClass with JavaScript when the user clicks on the icon. This class makes the topNavClass look good on small screens */
 
