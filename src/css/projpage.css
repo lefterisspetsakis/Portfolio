@@ -22,3 +22,8 @@ h2 span {
 h2 span.spacer {
    padding:0 5px;
 }
+
+#headerContainer {
+  padding: -10;
+  max-width: 100%;
+}
