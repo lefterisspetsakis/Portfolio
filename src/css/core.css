@@ -77,6 +77,20 @@ ul.topNavClass li.icon {display: none;}
   padding: 0;
 }
 
+/*************************
+      Footer Styles
+*************************/
+
+div#footer-bg {
+  background-color: #333;
+}
+
+div#footer-bg > .row > .col-lg-6 > h3,
+div#footer-bg > .row > .col-lg-6 > p {
+  color: #f2f2f2;
+  text-align: center-core;
+}
+
 /* The "responsive" class is added to the topNavClass with JavaScript when the user clicks on the icon. This class makes the topNavClass look good on small screens */
 
 @media screen and (max-width:680px) {
