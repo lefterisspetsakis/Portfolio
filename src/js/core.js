@@ -4,9 +4,8 @@ Date: Feb 14, 2017
 Module: core.js
 
 This module will contain general
-functions that will control generic
-site actions. Ex. the responsive nav
-bar for screens less than 850px.
+functions that will control basic
+site actions.
 
 Written by: Lefteris Spetsakis
 */
