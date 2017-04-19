@@ -78,6 +78,14 @@ ul.topNavClass li.icon {display: none;}
 }
 
 /*************************
+      Project Styles
+*************************/
+
+div.project-item-outer {
+  padding-bottom: 20px;
+}
+
+/*************************
       Footer Styles
 *************************/
 

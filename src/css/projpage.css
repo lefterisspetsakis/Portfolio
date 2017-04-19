@@ -27,3 +27,9 @@ h2 span.spacer {
   padding: -10;
   max-width: 100%;
 }
+
+img.proj-banner {
+  width: 100%;
+  max-width: 850px;
+  padding: -10px;
+}
