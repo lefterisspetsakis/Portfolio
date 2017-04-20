@@ -34,20 +34,85 @@ Written by: Lefteris Spetsakis
         </ul> 
       </nav>
       <section id="project-template" class="mainContainer">
-        
-        <div id="headerContainer" class="container">
+        <img class="proj-banner" src="../../res/projects/rave_big_colourful.PNG" alt="ravedj">
+        <div class="container">
+          
           <div class="row">
-            <div class="col-lg-12">
-              <div class="image">
-                <img src="../../res/projects/game.png" alt="" />
-                <h2>
-                  <span>
-                    GryoSnake<span class='spacer'></span>
-                  </span>
-                </h2>
-              </div>
+            <div class="col-lg-9">
+              <br>
+              <p class="h2">About</p>
+              <p>GyroSnake is a snake game that is played on a dot matrix display. It runs on an ATmega328 (an atem chip) 
+                and is controlled by a gyroscope.
+              </p>
+              <p class="h2">Progress</p>
+              <p>GyroSnake is currently in development and is available on GitHub. This is a project that I started recently, 
+                so not much code has been written yet. However, I would like to share these designs anyway for the benefit 
+                of anyone wishing to use them in their projects or for anyone who is simply interested. Enjoy!
+              </p>
+              <p class="h2">Design</p>
+              <p>The design I am implementing is one that incorporates fundamental concepts in real time operating systems 
+                such as event queues and task queues. It also uses two decoder IC's (integrated circuit) that take 3 digital 
+                signals as input and turn on the corresponding output pin. These are used to drive the display because the 
+                atmel chip does not have enough pins to send signals to each display pin.
+              </p>
+              <p class="h3">Hardware Design</p>
+              <p>The circuit used in GyroSnake is simpler than it appears. It consists of the gyro connected directly 
+                to the atmel, a dot matrix display connected with two decoders and a pair of inverters for the one decoder, 
+                and a simple voltage regulation module. Only one decoder needs to be inverted because when one decoder is 
+                sending a HIGH signal, the other should send a LOW (essentially a ground for the LED being lit up). There are two 
+                inverters because each one has 6 output pins while the dot matrix needs 7, so one extra inverter is used.
+                <br><br>
+                The idea behind the design is based on the following concept. At any given moment, it is impossible to display 
+                any two LEDs on the display without displaying 4 to create a rectangle. The reason for this is that all anodes 
+                are connected together in their respective rows and all cathodes are similarily connected to their respective columns. 
+                This is done to reduce the number of pins required to drive the display. However, if you turn on B3 and D6 for example, 
+                B6 and D3 will also light up.
+                <br><br>
+                To solve this problem, we cycle through the LEDs, turning them on or off one by one, at a high enough frequency 
+                that the human eye will not notice. This is where the design of the software becomes important.
+              </p>
+              <p class="h3">Software Design</p>
+              <p>The design behind the code is based on the concept where it is impossible to turn on any two LEDs at the exact 
+                same time without turning on two other LEDs that form a rectangle. We discussed that we need to cycle through the 
+                LEDs fast enough that the human eye cannot notice that we are displaying them one by one.
+                <br><br>
+                To implement this in C++/Arduino, we need a few key elements. The first is a clock. On the atmel chip, this is 
+                fairly simple if we use the arduino library. We can use the millis() function to measure the elapsed time between 
+                events. This means that we need a way to keep track of events, which is where the event queue comes in. The event 
+                queue is used to store pending events that are submitted by various modules such as the GameManager or the 
+                directional input module (controls snake movement). The next element we need is a task queue. This is very similar 
+                to the event queue, however the event queue holds 'events' which we will define as things that happen spontaneously 
+                such as user input, and the task queue holds 'tasks' which we will define to be things that occur regularly such as 
+                updating the display. There are a few other things we need, but these are the fundamental ones.
+              </p>
+              <p class="h4">Event Queue</p>
+              <p>As we discussed above, the event queue is used to track events which occur spontaneously. These events are 
+                typically submitted by modules that accept input (gyro module) and are processed by modules that provide output 
+                (display module). Event queues are important because there will be times in the program where an event will take 
+                two or more clock cycles to process and in the mean time another event will be submitted. Without an event queue, 
+                missed inputs may be noticed, depending of course on the implementation. The event queue prevents missed events 
+                to a certain extent by storing the events and allowing other processes to continue while the events in the queue 
+                are being processed. This may increase input lag slightly, but this is hardly noticable, especially in our system 
+                where it is not controlled by tactile keyboard inputs that the user can feel.
+              </p>
+              <p class="h4">Task Queue</p>
+              <p>The task queue is similar to the event queue, however it is strictly for things that occur regularly (usually 
+                lower level operations). In this game it is used for tracking the display updates, checking the gyroscope for 
+                changes (if there is a change, an event is sent to the event queue), and other little operations such as incrementing 
+                the score, and updating the frame.
+              </p>
+            </div>
+            <div class="col-lg-3">
+              <br>
+              <br>
+              <p>Jan. - Aug. 2016</p>
+              <br><br>
+              <p>&copy; Rave Media Inc. 2017</p>
+              <p>All rights reserved.</p>
             </div>
           </div>
+          
+          
           
         </div>
       </section>
