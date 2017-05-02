@@ -33,3 +33,7 @@ img.proj-banner {
   max-width: 850px;
   padding: -10px;
 }
+
+div.info-bar {
+  text-align: right;
+}
