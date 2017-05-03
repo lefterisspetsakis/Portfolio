@@ -78,6 +78,15 @@ ul.topNavClass li.icon {display: none;}
 }
 
 /*************************
+     Home Text Styles
+*************************/
+
+p#welcome-text {
+  padding-top: 25px;
+  font-size: 17px;
+}
+
+/*************************
       Project Styles
 *************************/
 
