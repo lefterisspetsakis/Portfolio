@@ -1,0 +1,120 @@
+<!--
+Date: Mar 27, 2017
+
+Module: arduino_snake.html
+
+This module is the project page for the
+arduino snake game.
+
+Written by: Lefteris Spetsakis
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/core.css">
+    <link rel="stylesheet" href="../../css/projpage.css">
+    <link rel="stylesheet" href="../../css/fonts.css">
+    <link href="../../js/core.js">
+  </head>
+  <body>
+    <div class="center-core" id="fullContainer">
+      <nav class="indexTopNavClass" class="center-core" id="navBar">
+        <ul class="topNavClass" id="topNav">
+          <li class="navFontsClass"><a href="../home.html">Home</a></li>
+          <li class="navFontsClass"><a href="../projects.html">Projects</a></li>
+          <li class="navFontsClass"><a href="../contact.html">Contact</a></li>
+          <li class="navFontsClass"><a href="../about.html">About</a></li>
+          <li class="icon">
+            <a href="javascript:void(0);" onclick="respNavBar()">&#9776;</a>
+          </li>
+        </ul> 
+      </nav>
+      <section id="project-template" class="mainContainer">
+        <img class="proj-banner" src="../../res/projects/gyrosnake_carousel_2_cropped.jpg" alt="ravedj">
+        <div class="container">
+          
+          <div class="row">
+            <div class="col-lg-9">
+              <br>
+              <p class="h2">About</p>
+              <p>This portfolio is a website where I showcase my favourite projects that I have done or am currently working on.
+                In this page, we will discuss the features of this site and the web technologies used to make it all happen.
+              </p>
+              <p class="h2">Design</p>
+              <p>The design of this site is meant to be simple and elegant, with clean and muted colours that do not take away 
+                from the content of each page. I have implemented a top anchored nav bar centered in the middle of the page. 
+                The basic layout of the site is based on this nav bar in that it is meant to resemble a printed page sitting 
+                on a table. I felt that the stretched/fullscreen layout that some sites use did not fit this site, and a 
+                "printed page" layout was more appropriate. All of the features have been implemented with HTML, CSS, JavaScript, 
+                and Bootstrap.
+                <br><br>
+                Responsiveness is a priority for this site. All the images, nav bar hover animations, and other graphics are all 
+                nice and pretty, but they hinder the responsiveness of the site and engagement of the user. I have used several 
+                techniques and strategies to keep lag to a minimum.
+                <br><br>
+                Firstly, the nav bar is designed to auto resize when the browser window is smaller than 850 pixels or when the 
+                page is viewed on a mobile device. When the screen is smaller than 680 pixels, all buttons but the home button 
+                are relocated to a dropdown menu at the right of the nav bar. These two features are written in plain HTML and CSS 
+                without Bootstrap or any other framework. The animations do not consume many resourses and thus provide an 
+                engaging experience to the user at minimal cost. 
+                <br><br>
+                Secondly, the site uses the Bootstrap framework for most of the animations, the fluid resizing and such, due to 
+                the simple and readable html file that results when Bootstrap is used, and due to its performance. Bootstrap 
+                'columns' and 'rows' are used to organize content on the webpage in a clean manner that is pleasing to the eye.
+                These colums and rows also rearrange content on the screen to account for different screen sizes. Bootstrap also 
+                provides modern buttons and input fields which are used in the contact form.
+                <br><br>
+                Thirdly, image compression and resizing is used. The images when photographed were around 20+ MB each, which is 
+                far from ideal in a webpage, especially one designed for mobile use. After compression, each photo is around 
+                20 - 50 KB with quality loss that is hardly noticable. Each photo has been resized to approximately the actual 
+                size that it is displayed at in the web browser. This allows for much lighter photos with minimal quality loss 
+                because they will not be displayed at higher resolutions anyway. They have also been saved in the JPEG format 
+                due to its many advantages with respect to compression.
+              </p>
+            </div>
+            <div class="col-lg-3 info-bar">
+              <br>
+              <br>
+              <p>April 2017</p>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </section>
+      <footer>
+        <hr class="star-primary">
+        <div id="footer-bg" class="container">
+          <div class="row">
+            <div class="col-lg-4 footer-text">
+              <h3>Quick Links</h3>
+              <a href="home.html" class="footer-link"><p>Home</p></a>
+              <a href="projects.html" class="footer-link"><p>Projects</p></a>
+              <a href="contact.html" class="footer-link"><p>Contact</p></a>
+              <a href="about.html" class="footer-link"><p>About</p></a>
+            </div>
+            <div class="col-lg-8 footer-text">
+              <h3>Contact Info</h3>
+              <p>Email: lefteris.spetsakis@gmail.com</p>
+              <p>GitHub: 
+                <a href="https://github.com/lefterisspetsakis" class="footer-link" target="_blank">
+                  https://github.com/lefterisspetsakis
+                </a>
+              </p>
+              <p>LinkedIn: 
+                <a href="https://www.linkedin.com/in/lefteris-spetsakis-2b2951b6" class="footer-link" target="_blank">
+                  https://www.linkedin.com/in/lefteris-spetsakis-2b2951b6
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
