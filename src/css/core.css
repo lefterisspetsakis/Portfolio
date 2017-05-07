@@ -104,16 +104,16 @@ div#footer-bg {
 
 div#footer-bg > .row > .footer-text > h3,
 div#footer-bg > .row > .footer-text > p {
-  color: white;
+  color: lightgrey;
   text-align: center-core;
 }
 
 a.footer-link {
-  color: white;
+  color: lightgrey;
 }
 
 a.footer-link:hover {
-  color: white;
+  color: lightgrey;
 }
 
 div.footer-text > h3, div.footer-text > a, div.footer-text > p {
