@@ -32,7 +32,7 @@ $(function() {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "../mail/contact_me.php",
+                url: "https://github.com/lefterisspetsakis/Portfolio/blob/master/src/mail/contact_me.php", // "../mail/contact_me.php",
                 type: "POST",
                 data: {
                     name: name,
