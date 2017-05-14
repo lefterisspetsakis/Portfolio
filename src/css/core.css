@@ -93,6 +93,24 @@ div.project-item-outer {
 }
 
 /*************************
+       About Styles
+*************************/
+
+div#social-links {
+  align-self: center;
+  padding-bottom: 20px;
+}
+
+div#social-links a {
+  padding: 20px;
+  align-self: auto;
+/*
+  padding-left: 20px;
+  padding-right: 20px;
+*/
+}
+
+/*************************
       Footer Styles
 *************************/
 
