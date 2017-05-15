@@ -62,18 +62,16 @@ ul.topNavClass li.icon {display: none;}
 }
 
 /*************************
-     Carousel Styles
+    Home Banner Styles
 *************************/
 
-.carousel-inner > .item > img,
-.carousel-inner > .item > a > img {
+img.proj-banner-home {
   width: 100%;
-  margin: auto;
+  max-width: 850px;
+  padding: -10px;
 }
 
-#carousel-container {
-  padding: 0;
-}
+
 
 /*************************
      Home Text Styles
