@@ -25,6 +25,9 @@ div.container {max-width: 850px;}
   Navigation bar styles
 *************************/
 
+
+/*nav ul li:last-child { float: right; }*/
+
 ul.topNavClass {
   list-style-type: none;
   margin: 0;
@@ -80,6 +83,14 @@ img.proj-banner-home {
 div.welcome-text {
   padding-top: 25px;
   font-size: 16px;
+}
+
+div.feat-projs {
+  padding-bottom: 10px;
+}
+
+div.feat-projs h2 {
+  padding-bottom: 3px;
 }
 
 /*************************
